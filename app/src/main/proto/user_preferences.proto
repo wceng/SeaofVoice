@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+option java_package = "dev.wceng.seaofvoice.data.datastore";
+option java_multiple_files = true;
+
+message UserPreferencesProto {
+  map<string, bool> favorite_station_ids = 1;
+  int32 dark_mode_config = 2; // 0: Follow System, 1: Light, 2: Dark
+  bool use_dynamic_color = 3;
+  bool auto_play_on_start = 4;
+  string last_played_station_id = 5;
+  bool pause_on_headset_disconnect = 6;
+}

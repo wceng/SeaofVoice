@@ -1,0 +1,76 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+
+    <!-- Background Circle for reference/app icon (Optional) -->
+    <path
+        android:pathData="M512,512m-512,0a512,512 0,1 1,1024 0a512,512 0,1 1,-1024 0"
+        android:fillColor="#F8FAFF"/>
+
+    <!-- Gradient Definition -->
+    <path android:pathData="M0,0h1024v1024h-1024z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:centerX="512"
+                android:centerY="512"
+                android:gradientRadius="600"
+                android:type="radial">
+                <item android:color="#1A73E8" android:offset="0.0"/>
+                <item android:color="#8AB4F8" android:offset="1.0"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- The Eye of Sound (Center Dot) -->
+    <path
+        android:pathData="M512,512m-64,0a64,64 0,1 1,128 0a64,64 0,1 1,-128 0"
+        android:fillColor="#FFFFFF"/>
+
+    <!-- Ripple 1 (Inner Arc) -->
+    <path
+        android:pathData="M650,420 A200,200 0 0 1 650,604"
+        android:strokeWidth="48"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M374,420 A200,200 0 0 0 374,604"
+        android:strokeWidth="48"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round"/>
+
+    <!-- Ripple 2 (Middle Arc) -->
+    <path
+        android:pathData="M730,340 A320,320 0 0 1 730,684"
+        android:strokeWidth="40"
+        android:strokeColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:strokeAlpha="0.7"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M294,340 A320,320 0 0 0 294,684"
+        android:strokeWidth="40"
+        android:strokeColor="#FFFFFF"
+        android:fillAlpha="0.7"
+        android:strokeAlpha="0.7"
+        android:strokeLineCap="round"/>
+
+    <!-- Ripple 3 (Outer Arc) -->
+    <path
+        android:pathData="M810,260 A440,440 0 0 1 810,764"
+        android:strokeWidth="32"
+        android:strokeColor="#FFFFFF"
+        android:fillAlpha="0.4"
+        android:strokeAlpha="0.4"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M214,260 A440,440 0 0 0 214,764"
+        android:strokeWidth="32"
+        android:strokeColor="#FFFFFF"
+        android:fillAlpha="0.4"
+        android:strokeAlpha="0.4"
+        android:strokeLineCap="round"/>
+
+</vector>
